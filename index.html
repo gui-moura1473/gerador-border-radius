@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius CSS</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container-geral">
+        <h1>Border-radius Previewer</h1>
+        <div id="box-content">
+            <div class="box-toggle-up hide">
+                <div id="up-boxes">
+                    <input id="border-value5" type="number" value="0" maxlength="3">
+                    <input id="border-value6" type="number" value="0" maxlength="3">
+                </div>
+            </div>
+            <div id="side-boxes" class="conteudo">
+                <div class="side-boxes">
+                    <input id="border-value1" type="number" value="0" maxlength="3">
+                    <input id="border-value4" type="number" value="0" maxlength="3">
+                </div>
+                <div id ="box" class="box-border"><div id="label-box"><h3>Box preview</h3><p>change the values</p></div></div>
+                <div class="side-boxes">
+                    <input id="border-value2" type="number" value="0" maxlength="3">
+                    <input id="border-value3" type="number" value="0" maxlength="3">
+                </div>
+            </div>
+            <div class="box-toggle-down hide">
+                <div id="down-boxes">
+                    <input id="border-value7" type="number" value="0" maxlength="3">
+                    <input id="border-value8" type="number" value="0" maxlength="3">
+                </div>
+            </div>
+        </div>
+        <div class="parameters">
+            <p>Box dimensions</p>
+            <div class="input-dimensions">
+                <div id="input-wh">
+                    <input type="number" id="box-width" value="300"  max="800">
+                    <label for="box-width">Width</label>
+                    <p class="label-px">px</p>
+                    <p class="sub-input">min 100px</p>
+                    <p class="sub-input">max 800px</p>
+                </div>
+                <h2>X</h2>
+                <div id="input-wh">
+                    <input type="number" id="box-height" value="300"  max="800">
+                    <label for="box-height">Height</label>
+                    <p class="label-px">px</p>
+                    <p class="sub-input">min 100px</p>
+                    <p class="sub-input">max 800px</p>
+                </div>
+                <div class="select-type">
+                    <select id="type-border">
+                        <option value="border">Borda Simples</option>
+                        <option value="complex-border">Borda Complexa</option>  
+                    </select>
+                </div>
+            </div>
+            <input type="text" class="code-text" id="code-text" readonly>
+            <div class="copy-text" id="copy-text">Click above to copy!</div>
+            
+        </div>
+        
+        
+
+    </div>
+</body>
+</html>
